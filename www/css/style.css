@@ -1,0 +1,29 @@
+/* Empty. Add your own CSS if you like */
+.scroll {
+        height: 100%;
+    }
+    #form{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .padding{
+        text-align: center;
+    }
+    .button{
+        background-color: #0080a8;
+        border-radius: 5px;
+        color: #90d8ef;
+        border-color: #90d8ef;
+        width: 40%;
+    }
+
+    /* homescreen background image */
+    .background.scroll-content {
+        background: url('../img/bg.jpg') no-repeat;
+        background-size: cover;
+    }

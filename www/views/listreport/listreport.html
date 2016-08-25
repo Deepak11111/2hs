@@ -1,0 +1,12 @@
+<ion-view view-title="Fact List">
+  <ion-content>
+     <div class="list card" ng-repeat="restaurant in restaurants">
+      <div class="item item-thumbnail-left" href="#">
+        <img ng-src="{{restaurant.image_url}}" />
+        <h2>{{restaurant.name}}</h2>
+        <p>{{restaurant.address}}, {{restaurant.city}}</p>
+      </div>
+    </div>
+    <ion-infinite-scroll on-infinite="getRestaurants()" ng-if="total < page" immediate-check="false"></ion-infinite-scroll>
+  </ion-content>
+</ion-view>

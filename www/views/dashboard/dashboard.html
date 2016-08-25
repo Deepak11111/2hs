@@ -1,0 +1,18 @@
+
+<ion-view view-title="Dashboard" hide-back-button="true">
+<ion-tabs class="tabs-icon-top tabs-positive">
+
+  <ion-tab title="Report A Fact" icon-on="ion-ios-circle-filled" icon-off="ion-android-radio-button-on" ui-sref="dashboard.reportafact">
+    <ion-nav-view name="reportafact-tab"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="Fact List" icon-on="ion-ios-more" icon-off="ion-ios-more-outline" ui-sref="dashboard.listreport">
+    <ion-nav-view name="listreport-tab"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="Sign Out" icon-on="ion-ios-locked" icon-off="ion-ios-locked-outline" ui-sref="dashboard.signout">
+     <ion-nav-view name="signout-tab"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>
+</ion-view>

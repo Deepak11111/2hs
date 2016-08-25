@@ -1,0 +1,52 @@
+<ion-view view-title="{{title}}">
+  <ion-content>	
+      <div class="list card">
+
+        <div class="col text-center">
+                <ion-nav-button side="secondary">
+                <a class="button button-block"><i class="icon ion-camera"></i></a>
+        </ion-nav-button>
+
+
+	<label class="item item-input item-select">
+                <div class="input-label">
+                 <font color="#f7751f"> Category </font>
+                </div>
+                <select> 
+                 <option>Holiday Inn</option>
+                 <option selected>Stay Inn</option>
+                 <option>W Hotel</option>
+                 <option ng-repeat="item in items">
+                   Item {{item.location}}
+                 </option>
+                </select>
+        </label>
+ 
+	<label class="item item-input item-select">
+		<div class="input-label">
+		 <font color="f7751f"> Location </font>
+		</div>
+		<select> 
+     		 <option>huston</option>
+      		 <option selected>Australia</option>
+     		 <option>711 se J street Bentonville, AR, 72712</option>
+		 <option ng-repeat="item in items">
+		   Item {{item.location}}
+		 </option>
+  	 	</select>
+	</label>
+	
+        <div class="item item-input">
+                <textarea placeholder="Add text to your fact" rows="8"></textarea>
+        </div>
+ 
+
+  	<div class="col text-center">
+   		<ion-nav-button side="secondary">
+     		<a class="button">Submit</a>
+   	</ion-nav-button>
+   	</div>	
+     </div>
+
+  </ion-content>
+</ion-view>
